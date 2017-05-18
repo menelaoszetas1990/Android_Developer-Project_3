@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+
+    <!-- Text of the title -->
+    <string name="title">Basketball Quizz</string>
+
+    <!-- Description of main image -->
+    <string name="mainImage">Basketball court</string>
+
+    <!-- Text of 1st question -->
+    <string name="question1">1. Who is the greatest scorer of the NBA ?</string>
+
+    <!-- Answers of 1st question -->
+    <string name="q1firstAnswer">Kareem Abdul-Jabbar</string>
+    <string name="q1secondAnswer">Lebron James</string>
+    <string name="q1thirdAnswer">Michael Jordan</string>
+    <string name="q1fourthAnswer">Moses Malone</string>
+
+    <!-- Text of 2nd question -->
+    <string name="question2">2. Who won the NBA Championship the season 1993 -1994 ?</string>
+
+    <!-- Answers of 2nd question -->
+    <string name="q2firstAnswer">New York Knicks</string>
+    <string name="q2secondAnswer">Chicago Bulls</string>
+    <string name="q2thirdAnswer">Houston Rockets</string>
+    <string name="q2fourthAnswer">Philadelphia 76ers</string>
+
+    <!-- Text of 3rd question -->
+    <string name="question3">3. For witch of the above franchises has Michael Jordan played ?</string>
+
+    <!-- Answers of 3rd question -->
+    <string name="q3firstAnswer">Houston Rockets</string>
+    <string name="q3secondAnswer">Chicago Bulls</string>
+    <string name="q3thirdAnswer">New York Knicks</string>
+    <string name="q3fourthAnswer">Wizzards</string>
+
+    <!-- Text of 4th question -->
+    <string name="question4">4. Who of the above were teamates at LA Lakers?</string>
+
+    <!-- Answers of 4th question -->
+    <string name="q4firstAnswer">Kobe Bryant</string>
+    <string name="q4secondAnswer">Allen Iverson</string>
+    <string name="q4thirdAnswer">Scottie Pippen</string>
+    <string name="q4fourthAnswer">Shaquille O\'Neal</string>
+
+    <!-- Text of 5th question -->
+    <string name="question5">5. Who do they call the \"Greek Freak\" ?</string>
+    <string name="hintTextQ5">Last Name Needed</string>
+
+    <!-- Answer of 5th question -->
+    <string name="q5Answer">Adetokoumbo</string>
+
+    <!-- Text of 6th question -->
+    <string name="question6">6. Who is the player shown above ?</string>
+    <string name="hintTextQ6">Full Name Needed</string>
+    <!-- Description of image -->
+    <string name="imageDescriotionQ6">Larry Bird</string>
+
+    <!-- Answer of 6th question -->
+    <string name="q6Answer">Larry Bird</string>
+
+    <!-- Submit button text -->
+    <string name="submitButton">Submit</string>
+
+    <!-- Text for the score presentation -->
+    <string name="scoreText">Your score is</string>
+    <string name="fromAnswers">out of 6</string>
+
+</resources>
