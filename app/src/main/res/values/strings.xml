@@ -53,6 +53,10 @@
     <!-- Text of 6th question -->
     <string name="question6">6. Who is the player shown above ?</string>
     <string name="hintTextQ6">Full Name Needed</string>
+
+    <!-- The 'not' word in case of false answer at questions 5 and 6 -->
+    <string name="not">, not </string>
+
     <!-- Description of image -->
     <string name="imageDescriotionQ6">Larry Bird</string>
 

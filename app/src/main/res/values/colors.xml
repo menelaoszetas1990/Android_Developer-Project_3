@@ -5,4 +5,5 @@
     <color name="colorAccent">#FF4081</color>
     <color name="black">#000000</color>
     <color name="correctAnswer">#64DD17</color>
+    <color name="wrongAnswer">#E53935</color>
 </resources>

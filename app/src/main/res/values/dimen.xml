@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Main Layout Padding -->
+    <dimen name="mainLayoutPadding">16dp</dimen>
+
+    <!-- Main Image dimensions -->
+    <dimen name="mainImageMargin">16dp</dimen>
+    
+    <!-- Title dimensions -->
+    <dimen name="titleLayoutMargin">10dp</dimen>
+    <dimen name="titleTextSize">34sp</dimen>
+
+    <!-- Question dimensions -->
+    <dimen name="questionMargin">10dp</dimen>
+    <dimen name="questionMarginTop">20dp</dimen>
+    <dimen name="questionTextSize">18sp</dimen>
+
+    <!-- CheckBoxes dimensions -->
+    <dimen name="checkboxesTextSize">16sp</dimen>
+    <dimen name="checkboxesPaddingLeft">24dp</dimen>
+
+    <!-- EditText dimensions -->
+    <dimen name="edittextTextSize">16dp</dimen>
+    <dimen name="edittextMargin">5dp</dimen>
+
+    <!-- Button dimensions -->
+    <dimen name="buttonTextSize">16sp</dimen>
+    <dimen name="buttonMargin">20dp</dimen>
+</resources>

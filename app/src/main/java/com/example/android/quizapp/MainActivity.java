@@ -1,6 +1,5 @@
 package com.example.android.quizapp;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -28,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         boolean rightAnswerQuestion1 = radioButton1.isChecked();
         if (rightAnswerQuestion1)
             score += 1;
-        radioButton1.setTextColor(Color.parseColor("#64DD17"));
+        radioButton1.setTextColor(getColor(R.color.correctAnswer));
 
         //Checks if the correct radio button was picked in Question 2
         RadioButton radioButton2 = (RadioButton) findViewById(R.id.q2thirdAnswer);
@@ -36,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         if (rightAnswerQuestion2)
             score += 1;
         //Changes color of the text of the correct radio button to green
-        radioButton2.setTextColor(Color.parseColor("#64DD17"));
+        radioButton2.setTextColor(getColor(R.color.correctAnswer));
 
         //Checks if the correct answers are given in Question 3
         CheckBox checkBoxQuestion3a = (CheckBox) findViewById(R.id.q3firstAnswer);
@@ -50,8 +49,8 @@ public class MainActivity extends AppCompatActivity {
         if (answerQ3_b && answerQ3_d && !answerQ3_a && !answerQ3_c)
             score += 1;
         //Mark the right answers
-        checkBoxQuestion3b.setTextColor(Color.parseColor("#64DD17"));
-        checkBoxQuestion3d.setTextColor(Color.parseColor("#64DD17"));
+        checkBoxQuestion3b.setTextColor(getColor(R.color.correctAnswer));
+        checkBoxQuestion3d.setTextColor(getColor(R.color.correctAnswer));
 
         //Checks if the correct answers are given in Question 4
         CheckBox checkBoxQuestion4a = (CheckBox) findViewById(R.id.q4firstAnswer);
@@ -65,18 +64,24 @@ public class MainActivity extends AppCompatActivity {
         if (answerQ4_a && answerQ4_d && !answerQ4_b && !answerQ4_c)
             score += 1;
         //Mark the right answers
-        checkBoxQuestion4a.setTextColor(Color.parseColor("#64DD17"));
-        checkBoxQuestion4d.setTextColor(Color.parseColor("#64DD17"));
+        checkBoxQuestion4a.setTextColor(getColor(R.color.correctAnswer));
+        checkBoxQuestion4d.setTextColor(getColor(R.color.correctAnswer));
 
         //Checks if the correct answer is typed in Question 5
         EditText playerQ5 = (EditText) findViewById(R.id.q5Answer);
         if (playerQ5.getText().toString().equals(getString(R.string.q5Answer))) {
             score += 1;
             //Changes the color of the answer to green if correct
-            playerQ5.setTextColor(Color.parseColor("#64DD17"));
+            playerQ5.setTextColor(getColor(R.color.correctAnswer));
         } else {
-            //Shows the right answer
-            playerQ5.setText(getString(R.string.q5Answer) + ", not " + playerQ5.getText());
+            //if user did not insert anything
+            if (playerQ5.getText().toString().equals("")) {
+                playerQ5.setText(getString(R.string.q5Answer));
+                playerQ5.setTextColor(getColor(R.color.wrongAnswer));
+            } else {
+                //Shows the right answer if something was inserted from the user
+                playerQ5.setText(getString(R.string.q5Answer) + getString(R.string.not) + playerQ5.getText());
+            }
         }
 
         //Checks if the correct answer is typed in Question 6
@@ -84,10 +89,16 @@ public class MainActivity extends AppCompatActivity {
         if (playerQ6.getText().toString().equals(getString(R.string.q6Answer))) {
             score += 1;
             //Changes the color of the answer to green if correct
-            playerQ6.setTextColor(Color.parseColor("#64DD17"));
+            playerQ6.setTextColor(getColor(R.color.correctAnswer));
         } else {
-            //Shows the right answer
-            playerQ6.setText(getString(R.string.q6Answer) + ", not " + playerQ6.getText());
+            //if user did not insert anything
+            if (playerQ6.getText().toString().equals("")) {
+                playerQ6.setText(getString(R.string.q6Answer));
+                playerQ6.setTextColor(getColor(R.color.wrongAnswer));
+            } else {
+                //Shows the right answer if something was inserted from the user
+                playerQ6.setText(getString(R.string.q6Answer) + getString(R.string.not) + playerQ6.getText());
+            }
         }
 
         //Prevents the Submit method from being pressed more than once
